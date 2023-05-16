@@ -1,0 +1,97 @@
+*,* ::after,* ::before
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.wrapper
+{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    background:linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(223,211,184,1) 100%);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(245,245,245,1) 100%);
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    place-items:center;
+    justify-self: unset;
+}
+.tic-toc-toe
+{   width: 90%;
+    max-width: 20rem;
+    background-color:rgba(255,255,255,.25);
+    border-radius: 1rem ;
+    border: 1px solid rgba(255,255,255,.25);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    aspect-ratio: 1/1; 
+   padding: 1rem;
+}
+.game-info
+{
+    border-radius:1rem;
+    background-color: rgba(255,255,255,.25);
+    position:absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 3rem;
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 1rem;
+    color: black;
+    text-align: center;
+}
+.game-info p{
+    scale: 1;
+}
+.box
+{  
+     /* position: relative; */
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size:3rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1, .box2,.box4,.box5
+{
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+.box3,.box6
+{
+    border-bottom: 2px solid white;
+}
+.box7,.box8
+{
+    border-right: 2px solid white;
+}
+.btn
+{
+    border-radius:1rem;
+    background-color: rgba(255,255,255,.25);
+    position:absolute;
+    bottom:3rem ;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 2rem;
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.win
+{
+    background-color: green;
+}
+.btn.active
+{
+    display: flex;
+}
